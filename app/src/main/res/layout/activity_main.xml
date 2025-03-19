@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#E8F5E9"
+    tools:context=".MainActivity">
+
+    <!-- Input Field for Distance -->
+    <EditText
+        android:id="@+id/editTextDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_distance"
+        android:importantForAutofill="noExcludeDescendants"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp" />
+
+    <!-- Spinner for Transport Modes -->
+    <Spinner
+        android:id="@+id/spinnerTransportMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/transport_modes"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp" />
+
+    <!-- Button to Trigger Calculation -->
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#43A047"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:text="@string/button_calculate"
+        android:textColor="#FFFFFF" />
+
+    <!-- TextView to Display Results -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#212121"
+        android:padding="12dp"
+        android:visibility="gone" />
+
+</LinearLayout>

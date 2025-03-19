@@ -1,0 +1,29 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Eco-Friendly Travel Cost Calculator</string>
+
+    <!-- Input Field Hints -->
+    <string name="hint_distance">Enter distance in kilometers</string>
+
+    <!-- Spinner Options -->
+    <string-array name="transport_modes">
+        <item>Car</item>
+        <item>Bus</item>
+        <item>Bicycle</item>
+        <item>Walking</item>
+    </string-array>
+
+
+    <!-- Button Text -->
+    <string name="button_calculate">Calculate</string>
+
+    <!-- Result Messages -->
+    <string name="result_default">Your travel details will appear here.</string>
+    <string name="result_car">Consider carpooling to reduce emissions.</string>
+    <string name="result_bus">Public transport is a greener choice!</string>
+    <string name="result_bicycle">Great choice! Zero emissions!</string>
+    <string name="result_walking">You’re saving the planet one step at a time!</string>
+
+    <!-- Error Messages -->
+    <string name="error_invalid_distance">Please enter a valid distance (greater than 0).</string>
+</resources>
